@@ -1,10 +1,7 @@
 package com.fmdev.patterns.creational.prototype.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class Circle extends Shape {
-    public Circle() {
+class Circle extends Shape {
+    Circle() {
         type = "Circle";
     }
 

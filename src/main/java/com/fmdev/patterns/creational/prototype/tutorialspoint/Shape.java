@@ -1,23 +1,20 @@
 package com.fmdev.patterns.creational.prototype.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
 public abstract class Shape implements Cloneable {
     private String id;
-    protected String type;
+    String type;
 
     abstract void draw();
 
-    public String getType(){
+    String getType(){
         return type;
     }
 
-    public String getId() {
+    String getId() {
         return id;
     }
 
-    public void setId(String id) {
+    void setId(String id) {
         this.id = id;
     }
 

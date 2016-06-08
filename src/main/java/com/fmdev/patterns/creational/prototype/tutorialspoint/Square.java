@@ -1,10 +1,7 @@
 package com.fmdev.patterns.creational.prototype.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class Square extends Shape {
-    public Square() {
+class Square extends Shape {
+    Square() {
         type = "Square";
     }
 

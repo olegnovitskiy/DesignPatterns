@@ -1,10 +1,7 @@
 package com.fmdev.patterns.creational.prototype.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class Rectangle extends Shape {
-    public Rectangle() {
+class Rectangle extends Shape {
+    Rectangle() {
         type = "Rectangle";
     }
 

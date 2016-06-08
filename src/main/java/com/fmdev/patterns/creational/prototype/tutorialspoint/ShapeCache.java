@@ -2,13 +2,10 @@ package com.fmdev.patterns.creational.prototype.tutorialspoint;
 
 import java.util.Hashtable;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class ShapeCache {
-    private static Hashtable<String, Shape> shapeMap  = new Hashtable<String, Shape>();
+class ShapeCache {
+    private static Hashtable<String, Shape> shapeMap  = new Hashtable<>();
 
-    public static Shape getShape(String shapeId) {
+    static Shape getShape(String shapeId) {
         Shape cachedShape = shapeMap.get(shapeId);
         return (Shape) cachedShape.clone(); // Interface Cloneable is empty
     }
@@ -17,7 +14,7 @@ public class ShapeCache {
     // shapeMap.put(shapeKey, shape);
     // for example, we are adding three shapes
 
-    public static void loadCache() {
+    static void loadCache() {
         Circle circle = new Circle();
         circle.setId("1");
         shapeMap.put(circle.getId(),circle);
