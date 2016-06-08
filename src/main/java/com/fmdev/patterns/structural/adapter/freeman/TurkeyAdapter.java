@@ -1,12 +1,9 @@
 package com.fmdev.patterns.structural.adapter.freeman;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class TurkeyAdapter implements Duck {
+class TurkeyAdapter implements Duck {
     private Turkey turkey;
 
-    public TurkeyAdapter(Turkey turkey) {
+    TurkeyAdapter(Turkey turkey) {
         this.turkey = turkey;
     }
 

@@ -1,8 +1,5 @@
 package com.fmdev.patterns.structural.adapter.freeman;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
 public class DuckTestDrive {
     public static void main(String[] args) {
         Duck duck = new MallardDuck();
