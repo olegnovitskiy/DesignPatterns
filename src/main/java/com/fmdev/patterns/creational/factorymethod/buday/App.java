@@ -1,8 +1,5 @@
 package com.fmdev.patterns.creational.factorymethod.buday;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
 public class App {
     public static void main(String[] args) {
         LoggingProvider providerType = getTypeOfLoggingProviderFromFile();

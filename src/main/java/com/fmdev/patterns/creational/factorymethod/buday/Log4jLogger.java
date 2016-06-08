@@ -1,9 +1,6 @@
 package com.fmdev.patterns.creational.factorymethod.buday;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class Log4jLogger implements Logger {
+class Log4jLogger implements Logger {
     public void logMessage(String message) {
         System.out.println("Log4j message: " + message);
     }
