@@ -3,13 +3,10 @@ package com.fmdev.patterns.creational.builder.wiki;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by NIO on 15.04.2016. All rights reserved.
- */
-public class Meal {
-    private List<Item> items = new ArrayList<Item>();
+class Meal {
+    private List<Item> items = new ArrayList<>();
 
-    public void addItem(Item item){
+    void addItem(Item item){
         items.add(item);
     }
 
@@ -22,7 +19,7 @@ public class Meal {
         return cost;
     }
 
-    public void showItems(){
+    void showItems(){
 
         for (Item item : items) {
             System.out.print("Item : " + item.name());

@@ -1,9 +1,6 @@
 package com.fmdev.patterns.creational.builder.wiki;
 
-/**
- * Created by NIO on 15.04.2016. All rights reserved.
- */
-public abstract class ColdDriink implements Item {
+abstract class ColdDrink implements Item {
     public Packing packing() {
         return new Bottle();
     }
