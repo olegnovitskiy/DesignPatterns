@@ -1,8 +1,5 @@
 package com.fmdev.patterns.structural.adapter.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
 public class AdapterPatternDemo {
     public static void main(String[] args) {
         AudioPlayer audioPlayer = new AudioPlayer();

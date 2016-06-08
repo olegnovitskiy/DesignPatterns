@@ -1,10 +1,6 @@
 package com.fmdev.patterns.structural.adapter.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class AudioPlayer implements MediaPlayer {
-    private MediaAdapter mediaAdapter;
+class AudioPlayer implements MediaPlayer {
 
     public void play(String audioType, String fileName) {
         //inbuilt support to play mp3 music files
@@ -14,7 +10,7 @@ public class AudioPlayer implements MediaPlayer {
 
         //mediaAdapter is providing support to play other file formats
         else if(audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("mp4")){
-            mediaAdapter = new MediaAdapter(audioType);
+            MediaAdapter mediaAdapter = new MediaAdapter(audioType);
             mediaAdapter.play(audioType, fileName);
         }
 

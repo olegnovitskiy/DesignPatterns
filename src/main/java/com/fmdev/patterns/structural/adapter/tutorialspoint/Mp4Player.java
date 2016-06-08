@@ -1,9 +1,6 @@
 package com.fmdev.patterns.structural.adapter.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class Mp4Player implements AdvancedMediaPlayer {
+class Mp4Player implements AdvancedMediaPlayer {
     public void playVlc(String fileName) {
         // do nothing
     }

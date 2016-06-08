@@ -1,17 +1,15 @@
 package com.fmdev.patterns.structural.adapter.tutorialspoint;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class MediaAdapter implements MediaPlayer {
+class MediaAdapter implements MediaPlayer {
     private AdvancedMediaPlayer advancedMusicPlayer;
 
-    public MediaAdapter(String audioType){
+    MediaAdapter(String audioType){
 
         if(audioType.equalsIgnoreCase("vlc") ){
             advancedMusicPlayer = new VlcPlayer();
 
-        }else if (audioType.equalsIgnoreCase("mp4")){
+        }
+        else if (audioType.equalsIgnoreCase("mp4")){
             advancedMusicPlayer = new Mp4Player();
         }
     }
