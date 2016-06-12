@@ -1,20 +1,17 @@
 package com.fmdev.patterns.creational.builder.buday;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public class BuyLaptop {
+class BuyLaptop {
     private LaptopBuilder builder;
 
     public void setBuilder(LaptopBuilder builder) {
         this.builder = builder;
     }
 
-    public Laptop getLaptop() {
+    Laptop getLaptop() {
         return builder.getMyLaptop();
     }
 
-    public void ConstructLaption() {
+    void ConstructLaption() {
         builder.createNewLaptop();
         builder.setMonitorResolution();
         builder.setProcessor();

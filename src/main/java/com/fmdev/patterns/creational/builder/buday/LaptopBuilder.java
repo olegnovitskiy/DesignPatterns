@@ -1,16 +1,13 @@
 package com.fmdev.patterns.creational.builder.buday;
 
-/**
- * Created by NIO on 14.04.2016. All rights reserved.
- */
-public abstract class LaptopBuilder {
-    protected Laptop laptop;
+abstract class LaptopBuilder {
+    private Laptop laptop;
 
-    public Laptop getMyLaptop() {
+    Laptop getMyLaptop() {
         return laptop;
     }
 
-    public void createNewLaptop() {
+    void createNewLaptop() {
         laptop = new Laptop();
     }
 

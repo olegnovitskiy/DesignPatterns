@@ -8,6 +8,7 @@ public class App {
     }
 
     private static LoggingProvider getTypeOfLoggingProviderFromFile() {
-        return LoggingProvider.LOG4J; // Hardcoded for example simplification
+//        return LoggingProvider.LOG4J; // Hardcoded for example simplification
+        return LoggingProvider.JUL;
     }
 }
