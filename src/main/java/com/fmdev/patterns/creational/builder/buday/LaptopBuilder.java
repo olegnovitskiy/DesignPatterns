@@ -1,7 +1,7 @@
 package com.fmdev.patterns.creational.builder.buday;
 
 abstract class LaptopBuilder {
-    private Laptop laptop;
+    Laptop laptop;
 
     Laptop getMyLaptop() {
         return laptop;
