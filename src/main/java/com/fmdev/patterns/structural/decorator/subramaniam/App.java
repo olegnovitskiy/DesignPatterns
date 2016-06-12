@@ -8,10 +8,7 @@ public class App {
 
         doWork(5, inc);
         doWork(5, doubleIt);
-
-        // increment and double
-        int temp = inc.apply(5);
-        System.out.println(doubleIt.apply(temp));
+        doWork(5, inc.andThen(doubleIt));
     }
 
     private static void doWork(int value, Function<Integer, Integer> func) {
