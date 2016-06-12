@@ -23,5 +23,9 @@ public class App {
         }
 
         return result;
+
+//        return values.stream()
+//                     .filter(selector)
+//                     .reduce(0, Integer::sum);
     }
 }
