@@ -1,16 +1,13 @@
 package com.fmdev.patterns.structural.bridge.wiki;
 
-/**
- * Created by NIO on 15.04.2016. All rights reserved.
- */
-public class Circle extends Shape {
+class Circle extends Shape {
     private int x;
 
     private int y;
 
     private int radius;
 
-    public Circle(int x, int y, int radius, Drawer drawer) {
+    Circle(int x, int y, int radius, Drawer drawer) {
         super(drawer);
         setX(x);
         setY(y);
