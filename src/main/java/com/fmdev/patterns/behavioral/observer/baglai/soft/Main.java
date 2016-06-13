@@ -1,29 +1,21 @@
 package com.fmdev.patterns.behavioral.observer.baglai.soft;
 
-/**
- * Created by oleksandr.baglai on 03.09.2015.
- */
 public class Main {
 
     public static void main(String[] args) {
-        // ��� ���������
         Recruiter recruiter = new RecruitingDepartment();
 
         System.out.println("------- Day1 -------");
 
-        // ���� ���������� ������ �� ����� ������
         Candidate candidate1 = new CandidateImpl("Eva Pupkina", "J2EE");
         Candidate candidate2 = new CandidateImpl("Stiven Pupkin", "J2SE", "Android");
 
-        // ����������� � ��������� ������ ���������
         recruiter.register(candidate1);
         recruiter.register(candidate2);
 
-        // �������� �� ���� ������ ��� ��������
         recruiter.addNew(new Project("NifNif", "J2SE", "Android"));
         recruiter.addNew(new Project("NufNuf", "J2EE"));
 
-        // � ������� �������� ��������
         recruiter.notice();
 
         System.out.println("------- Day2 -------");
